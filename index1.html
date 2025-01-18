@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Climate Architecture</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@0.244.0/dist/lucide.js"></script>
+  <style>
+    /* Custom styles if needed */
+  </style>
+</head>
+<body class="min-h-screen bg-red-50">
+  
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold text-red-900">Climate Architecture</div>
+        
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="md:hidden text-red-900 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-red-900 hover:text-red-700">Projects</a>
+          <a href="#" class="text-red-900 hover:text-red-700">About</a>
+          <a href="#" class="text-red-900 hover:text-red-700">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white p-4">
+      <a href="#" class="block py-2 text-red-900 hover:text-red-700">Projects</a>
+      <a href="#" class="block py-2 text-red-900 hover:text-red-700">About</a>
+      <a href="#" class="block py-2 text-red-900 hover:text-red-700">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Feature Image -->
+  <div class="relative bg-red-900 text-white">
+    <div class="absolute inset-0 z-10 bg-gradient-to-r from-red-900/90 to-red-900/70"></div>
+    
+    <!-- Widescreen-optimized responsive image -->
+    <div class="relative w-full">
+      <div class="aspect-video w-full">
+        <img 
+          src="https://via.placeholder.com/1920x1080" 
+          alt="Modern fireproof luxury home" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+    
+    <div class="relative z-20 max-w-6xl mx-auto px-4 py-16 md:py-24 lg:py-32">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
+          Resilient Luxury for a Changing Climate
+        </h1>
+        <p class="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-red-50">
+          Our wildfire-resistant designs combine cutting-edge safety with timeless elegance, ensuring your sanctuary stands resilient against nature's challenges.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button class="bg-white text-red-900 px-6 md:px-8 py-3 md:py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-red-50 transition-colors">
+            View Our Approach
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </button>
+          <button class="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-white/10 transition-colors">
+            Featured Projects
+          </button>
+        </div>
+      </div>
+      
+      <!-- Feature highlights -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-20">
+        <div class="border-l-2 border-red-500 pl-4">
+          <div class="text-2xl md:text-3xl lg:text-4xl font-bold">Class A</div>
+          <div class="text-red-200">Fire Resistant</div>
+        </div>
+        <div class="border-l-2 border-red-500 pl-4">
+          <div class="text-2xl md:text-3xl lg:text-4xl font-bold">Up to 1,400°F</div>
+          <div class="text-red-200">Heat Protection</div>
+        </div>
+        <div class="border-l-2 border-red-500 pl-4">
+          <div class="text-2xl md:text-3xl lg:text-4xl font-bold">99.9%</div>
+          <div class="text-red-200">Safety Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-red-900 mb-12">Climate-Resilient Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Project Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <i data-lucide="sun" class="w-6 h-6 text-red-700 mb-4"></i>
+        <h3 class="text-xl font-bold text-red-900 mb-2">Desert Sanctuary</h3>
+        <p class="text-red-700 mb-4">Heat-resistant housing with natural cooling systems</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Thermal mass walls</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Solar chimneys</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Deep overhangs</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <i data-lucide="wind" class="w-6 h-6 text-red-700 mb-4"></i>
+        <h3 class="text-xl font-bold text-red-900 mb-2">Coastal Guardian</h3>
+        <p class="text-red-700 mb-4">Storm-resistant structure with flood mitigation</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Elevated foundation</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Impact-resistant windows</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Water barriers</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <i data-lucide="droplets" class="w-6 h-6 text-red-700 mb-4"></i>
+        <h3 class="text-xl font-bold text-red-900 mb-2">Urban Oasis</h3>
+        <p class="text-red-700 mb-4">Water-efficient design with integrated gardens</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Rainwater harvesting</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Green roofs</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1 h-1 rounded-full bg-red-700"></span>
+            <span class="text-red-900">Greywater systems</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-red-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Climate Architecture</h3>
+          <p class="text-red-100">
+            Creating sustainable spaces for generations to come.
+          </p>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <p class="text-red-100">contact@climatearchitecture.com</p>
+          <p class="text-red-100">+1 (555) 123-4567</p>
+        </div>
+        
+        <!-- Follow Us -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-red-100 hover:text-white">
+              <i data-lucide="linkedin" class="w-6 h-6"></i>
+            </a>
+            <a href="#" class="text-red-100 hover:text-white">
+              <i data-lucide="twitter" class="w-6 h-6"></i>
+            </a>
+            <a href="#" class="text-red-100 hover:text-white">
+              <i data-lucide="instagram" class="w-6 h-6"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        // Toggle icon
+        const icon = menuButton.querySelector('i');
+        if (mobileMenu.classList.contains('hidden')) {
+          icon.setAttribute('data-lucide', 'menu');
+        } else {
+          icon.setAttribute('data-lucide', 'x');
+        }
+        lucide.replace(); // Update the icons
+      });
+
+      // Initialize Lucide icons
+      lucide.replace();
+    });
+  </script>
+
+</body>
+</html>
